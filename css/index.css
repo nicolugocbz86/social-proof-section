@@ -38,34 +38,71 @@
                 justify-content: center;
                 align-content: center;
                 text-align: center;
+                font-size: 15px;
             }
 
             article {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            article {
+                height: 220px;
+                border-radius: 1rem;
                 background-color: hsl(300, 43%, 22%);
                 color: hsl(0, 0%, 100%);
             }
 
             article p {
                 text-align: left;
+                line-height: 1.4rem;
             }
 
             header {
+                width: 50%;
                 display: grid;
-                column-span: 1;
             }
+
+            header,
+            header img {
+                height: 42px;
+            }
+
+            header img {
+                border-radius: 100%;
+                align-self: center;
+            }
+
+            header h4 {
+                align-self: center;
+            }
+
+            header span {
+                align-self: center;
+                color: hsl(333, 80%, 67%);
+            }
+
+
 
         /* CLASS */
 
-            .card {
+            .card,
+            .articles_container {
                 display: flex;
             }
 
-            .card {
+            .card,
+            .articles_container {
                 flex-direction: column;
             }
 
             .card {
-                width: 350px;
+                width: 340px;
+            }
+
+            .articles_container {
+                gap: 1rem;
             }
 
         /* ID */
