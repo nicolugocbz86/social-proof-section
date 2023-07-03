@@ -40,8 +40,26 @@
                 text-align: center;
             }
 
+            header {
+                display: grid;
+            }
+
         /* CLASS */
+
+
         /* ID */
+
+        #img-colton
+        #name-colton
+        #status-colton
+
+        #img-irene
+        #name-irene
+        #status-irene
+
+        #img-anne
+        #name-anne
+        #status-anne
 
     }
 
