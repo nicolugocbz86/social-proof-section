@@ -40,26 +40,89 @@
                 text-align: center;
             }
 
+            article {
+                background-color: hsl(300, 43%, 22%);
+                color: hsl(0, 0%, 100%);
+            }
+
+            article p {
+                text-align: left;
+            }
+
             header {
                 display: grid;
+                column-span: 1;
             }
 
         /* CLASS */
 
+            .card {
+                display: flex;
+            }
+
+            .card {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 350px;
+            }
 
         /* ID */
 
-        #img-colton
-        #name-colton
-        #status-colton
+        #img-colton {
+            grid-area: img-colton;
+        }
 
-        #img-irene
-        #name-irene
-        #status-irene
+        #name-colton {
+            grid-area: name-colton;
+        }
 
-        #img-anne
-        #name-anne
-        #status-anne
+        #status-colton {
+            grid-area: status-colton;
+        }
+
+        #header-colton {
+            grid-template-areas:
+            'img-colton name-colton'
+            'img-colton status-colton';
+        }
+
+        #img-irene {
+            grid-area: img-irene;
+        }
+
+        #name-irene {
+            grid-area: name-irene;
+        }
+
+        #status-irene {
+            grid-area: status-irene;
+        }
+
+        #header-irene {
+            grid-template-areas:
+            'img-irene name-irene'
+            'img-irene status-irene';
+        }
+
+        #img-anne {
+            grid-area: img-anne;
+        }
+
+        #name-anne {
+            grid-area: name-anne;
+        }
+
+        #status-anne {
+            grid-area: status-anne;
+        }
+
+        #header-anne {
+            grid-template-areas:
+            'img-anne name-anne'
+            'img-anne status-anne';
+        }
 
     }
 
