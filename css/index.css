@@ -82,6 +82,30 @@
 
         /* CLASS */
 
+        .card,
+        .card-top,
+        .articles_container {
+            display: flex;
+        }
+
+        .card,
+        .card-top,
+        .articles_container {
+            flex-direction: column;
+        }
+
+        .card-top {
+            color: hsl(300, 43%, 22%);
+        }
+
+        .rates_container {
+            font-weight: 700;
+            color: hsl(300, 43%, 22%);
+        }
+
+        .rates_container div {
+            background-color: hsl(300, 24%, 96%);
+        }
 
         /* ID */
 
