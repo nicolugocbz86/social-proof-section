@@ -213,7 +213,18 @@
     @media screen and (min-width: 401px) {
 
         /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 800px;
+            }
+
         /* CLASS */
+
+            .card {
+                display: grid;
+            }
+
         /* ID */
 
     }
