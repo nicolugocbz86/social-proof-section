@@ -40,6 +40,10 @@
                 align-content: center;
                 text-align: center;
                 font-size: 15px;
+                background-image:
+                url(../images/bg-pattern-bottom-mobile.svg),
+                url(../images/bg-pattern-top-mobile.svg);
+                background-repeat: no-repeat;
             }
 
             article {
@@ -218,6 +222,9 @@
             body {
                 width: 1440px;
                 height: 800px;
+                background-image:
+                url(../images/bg-pattern-bottom-desktop.svg),
+                url(../images/bg-pattern-top-desktop.svg);
             }
 
             article {
@@ -269,7 +276,14 @@
             }
 
             .rates {
-                width: 66%;
+                width: 80%;
+                flex-direction: row;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .rates_container {
+                justify-content: center;
             }
 
             .rates:nth-child(2) {
@@ -281,7 +295,7 @@
             }
 
             .articles_container {
-                height: 260px;
+                height: 280px;
                 flex-direction: row;
             }
 
