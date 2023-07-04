@@ -143,6 +143,7 @@
 
         .rates {
             font-weight: 700;
+            border-radius: .4rem;
             background-color: hsl(300, 24%, 96%);
             color: hsl(300, 43%, 22%);
         }
@@ -219,12 +220,83 @@
                 height: 800px;
             }
 
+            article {
+                height: 224px;
+                justify-content: space-evenly;
+                padding: 1.1rem;
+                gap: 0;
+            }
+
+            article:nth-child(2) {
+                align-self: center;
+            }
+
+            article:nth-child(3) {
+                align-self: flex-end;
+            }
+
+            header {
+                width: 60%;
+            }
+
         /* CLASS */
 
             .card {
+                margin: auto;
+                width: 71%;
+                height: 100%;
                 display: grid;
+                grid-template-areas:
+                'card-top rates_container'
+                'articles_container articles_container';
+            }
+
+            .card-top h1,
+            .card-top p {
+                text-align: left;
+            }
+
+            .card-top h1 {
+                margin: 0;
+                font-size: 3.2rem;
+                width: 80%;
+            }
+
+            .card-top p {
+                margin: 0;
+                padding: 0;
+                width: 72%;
+            }
+
+            .rates {
+                width: 66%;
+            }
+
+            .rates:nth-child(2) {
+                align-self: center;
+            }
+
+            .rates:nth-child(3) {
+                align-self: flex-end;
+            }
+
+            .articles_container {
+                height: 260px;
+                flex-direction: row;
             }
 
         /* ID */
+
+            #card-top {
+                grid-area: card-top;
+            }
+
+            #rates_container {
+                grid-area: rates_container;
+            }
+
+            #articles_container {
+                grid-area: articles_container;
+            }
 
     }
