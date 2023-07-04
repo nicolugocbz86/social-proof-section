@@ -32,7 +32,7 @@
 
             body {
                 margin: auto;
-                width: 375;
+                width: 375px;
                 height: 1530px;
                 display: grid;
                 justify-content: center;
@@ -50,16 +50,21 @@
             }
 
             article {
+                border-radius: .6rem;
                 background-color: hsl(300, 43%, 22%);
                 color: hsl(300, 24%, 96%);
+                padding: 1.8rem;
+                gap: 1.2rem;
             }
 
             article p {
+                width: 88%;
                 text-align: left;
+                line-height: 1.4rem;
             }
 
             header {
-                width: 42%;
+                width: 60%;
                 display: grid;
                 row-gap: .2rem;
             }
@@ -84,27 +89,66 @@
 
         .card,
         .card-top,
+        .rates_container,
+        .rates,
+        .rates div,
         .articles_container {
             display: flex;
         }
 
         .card,
         .card-top,
+        .rates_container,
+        .rates,
         .articles_container {
             flex-direction: column;
+        }
+
+        .card-top,
+        .rates_container,
+        .articles_container {
+            padding: .8rem;
+            gap: .8rem;
+        }
+
+        .card {
+            width: 350px;
+            gap: 1rem;
         }
 
         .card-top {
             color: hsl(300, 43%, 22%);
         }
 
-        .rates_container {
+        .card-top h1,
+        .card-top p {
+            margin: auto;
+        }
+
+        .card-top h1 {
+            width: 80%;
+        }
+
+        .card-top p {
+            width: 92%;
+            line-height: 1.4rem;
+            padding: 0 .7rem 0 .7rem;
+        }
+
+        .rates {
+            padding: .6rem;
+            gap: .6rem;
+        }
+
+        .rates {
             font-weight: 700;
+            background-color: hsl(300, 24%, 96%);
             color: hsl(300, 43%, 22%);
         }
 
-        .rates_container div {
-            background-color: hsl(300, 24%, 96%);
+        .rates div {
+            justify-content: center;
+            gap: .4rem;
         }
 
         /* ID */
